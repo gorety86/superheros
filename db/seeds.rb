@@ -69,17 +69,6 @@ HeroPower.create(hero_id: parker.id, power_id: spidy.id, strength: "Strong")
 HeroPower.create(hero_id: parker.id, power_id: smart.id, strength: "Strong")
 HeroPower.create(hero_id: ant.id, power_id: shrink.id, strength: "Strong")
 HeroPower.create(hero_id: ant.id, power_id: reflex.id, strength: "Average")
-HeroPower.create(hero_id: ant.id, power_id: strong.id, strength: "Average")
-HeroPower.create(hero_id: hawk.id, power_id: arrows.id, strength: "Strong")
-HeroPower.create(hero_id: hawk.id, power_id: fly.id, strength: "Weak")
-HeroPower.create(hero_id: hawk.id, power_id: combat.id, strength: "Average")
-HeroPower.create(hero_id: strange.id, power_id: time.id, strength: "Strong")
-HeroPower.create(hero_id: strange.id, power_id: fly.id, strength: "Strong")
-HeroPower.create(hero_id: strange.id, power_id: combat.id, strength: "Weak")
-HeroPower.create(hero_id: marvel.id, power_id: strong.id, strength: "Strong")
-HeroPower.create(hero_id: marvel.id, power_id: fly.id, strength: "Strong")
-HeroPower.create(hero_id: marvel.id, power_id: stamina.id, strength: "Strong")
-HeroPower.create(hero_id: marvel.id, power_id: spidy.id, strength: "Weak")
 
 
 
