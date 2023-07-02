@@ -1,8 +1,9 @@
-SuperHeroes
-Code Challenge
-API backend project for tracking Heroes and their Powers.
+# SuperHeroes Code Challenge
 
-Table of content
+# API backend project for tracking Heroes and their Powers.
+
+# Table of content
+
 Technologies Used
 Installation
 Deliverables
@@ -17,7 +18,7 @@ SQLite3
 Installation & Set up
 Clone the repository
 
-https://github.com/Felix-Barosio/Superheroes
+https://github.com/gorety86/superheros
 Install Dependecies
 
 bundle install
@@ -32,6 +33,7 @@ Relationships
 A Hero has many Powers through HeroPower.
 A Power has many Heros through HeroPower.
 A HeroPower belongs to a Hero and belongs to a Power.
+
 # Deliverables
 GET /heroes
 
