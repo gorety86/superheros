@@ -8,8 +8,8 @@ class HerosController < ApplicationController
     end
 
     def show
-        hero_power = HeroPower.find(params[:id])
-          render json: hero_power.hero.to_json(include: { powers: { only: [:id, :name, :description] } })
+        hero = Hero.find(params[:id])
+          render json: hero
         
     end
 
