@@ -1,20 +1,17 @@
 class HerosController < ApplicationController
 
-    rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
-
     def index
         heros = Hero.all
         render json: heros
     end
 
     def show
-        hero = Hero.find(params[:id])
-          render json: hero
+        hero = Hero.includes(:powers).find_by(id: params[:id])
+        if hero
+          render json: hero.as_json(include: { powers: { only: [:id, :name, :description] } })
+        else
+          render json: { error: "Hero not found" }, status: :not_found
+        end
         
-    end
-
-
-    def render_not_found_response
-        render json: {errors: "Hero not found"}, status: :not_found
     end
 end
