@@ -9,6 +9,10 @@ class HeroPowersController < ApplicationController
 
     private
 
+    def hero_power_params
+        params.permit(:strength, :hero_id, :power_id)
+    end
+
     def render_not_found_response
         render json: { errors: "Hero Power not found"}, status: :not_found
     end
