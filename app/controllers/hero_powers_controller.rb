@@ -3,14 +3,16 @@ class HeroPowersController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
     def index
-        heropowers = HeroPower.all 
-        render json: heropowers
+        hero_powers = HeroPower.all 
+        render json: hero_powers
     end
 
     def create
-        hero_power = HeroPower.create!(hero_power_params)
-        render json: hero_power, status: :created
-    end
+        hero_power = HeroPower.create(hero_power_params)
+         hero_power.save
+          render json: hero_power.hero.to_json(include: { powers: { only: [:id, :name, :description] } }), status: :created
+        
+      end
 
     private
 
