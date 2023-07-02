@@ -83,6 +83,5 @@ HeroPower.create(hero_id: marvel.id, power_id: fly.id, strength: "Strong")
 HeroPower.create(hero_id: marvel.id, power_id: stamina.id, strength: "Strong")
 HeroPower.create(hero_id: marvel.id, power_id: spidy.id, strength: "Weak")
 
-
-
 puts "✅ Done seeding!"
+
