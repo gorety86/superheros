@@ -13,7 +13,6 @@ Author Info
 Technologies Used
 Ruby Version - ruby 2.7.4
 Ruby on Rails
-AMS - Active Model Serializer
 SQLite3
 Installation & Set up
 Clone the repository
