@@ -10,7 +10,7 @@ class HerosController < ApplicationController
 
     def show
       hero = find_hero
-      render json: hero, status: :ok, serializer: PowerSerializer
+      render json: hero, status: :ok, serializer: HeroSerializer
   end
 
   private
