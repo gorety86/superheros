@@ -11,7 +11,7 @@ class PowersController < ApplicationController
 
     def show
         power = find_power
-        render json: power
+        render json: power, status: :ok, serializer: ShowPowerHeroSerializer
     end
 
     def update
