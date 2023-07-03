@@ -27,7 +27,9 @@ rails db:migrate db:seed
 Run Server
 
 rails s
-Project Guidelines
+
+# Project Guidelines
+
 Relationships
 A Hero has many Powers through HeroPower.
 A Power has many Heros through HeroPower.
