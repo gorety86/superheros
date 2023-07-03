@@ -9,9 +9,8 @@ class HeroPowersController < ApplicationController
 
     def create
         hero_power = HeroPower.create(hero_power_params)
-         hero_power.save
-          render json: hero_power.hero.to_json(include: { powers: { only: [:id, :name, :description] } }), status: :created
-        
+        hero_power.save
+        render json: hero_power.to_json(include: { power: { only: [:id, :name, :description] } }), status: :created
       end
 
     private
